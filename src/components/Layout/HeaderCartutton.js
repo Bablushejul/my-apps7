@@ -1,6 +1,5 @@
 import CartIcon from "../Cart/CartIcon";
-import classes from './HeaderCartutton.module.css'
-
+import classes from './HeaderCartutton.module.css';
 const HeaderCartutton=props=>{
     return(
        
