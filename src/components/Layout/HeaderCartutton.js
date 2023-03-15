@@ -7,7 +7,8 @@ const HeaderCartutton = (props) => {
  const numberOfCartItems=cartCtx.items.reduce((currNumber,item)=>{
   return currNumber+item.amount;
  },0);
-
+console.log(numberOfCartItems)
+console.log(cartCtx)
  const btnClasses=`${classes.button} ${classes.bump}`
 
 

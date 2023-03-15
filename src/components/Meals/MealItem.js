@@ -6,14 +6,17 @@ import MealForm from "./MealForm";
 function MealItem(props) {
  const cartCtx= useContext(CartContext)
   const price = `$${props.price.toFixed(2)}`;
-
+//console.log(price,"")
   const addToCartHandler=amount=>{
+   // console.log(amount,"from Mealitems")
     cartCtx.addItem({
       id: props.id,
       name:props.name,
       amount:amount,
       price:props.price
+      
     })
+
   };
   return (
     <li className={classes.meal}>
