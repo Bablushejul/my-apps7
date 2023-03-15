@@ -18,7 +18,7 @@ const cartReducer = (state, action) => {
     if (existingCartItem) {
       const updatedItem = {
         ...existingCartItem,
-        amount: existingCartItem.amount + 1//action.item.amount
+        amount: existingCartItem.amount +action.item.amount
       };
 
       updatedItems = [...state.items];
@@ -29,7 +29,7 @@ const cartReducer = (state, action) => {
 
     return {
       items: updatedItems,
-      totalAmount: updatedTotalAmount,
+      totalAmount: updatedTotalAmount
     };
   }
   if(action.type==='REMOVE'){
